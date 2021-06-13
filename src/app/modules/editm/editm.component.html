@@ -1,0 +1,47 @@
+<p>editm works!</p>
+
+<div class="container pt-5">
+  <div class="card">
+        
+    <div class="alert " *ngIf="isupdated" role="alert">
+        <b>{{confirmation}}</b>
+    </div>
+    <h2 class="col-md-6 offset-5">Editer deliverycompany</h2>
+
+    <div class="card-body">
+        <button class="myButton" routerLink="/deliverycompany">Back to Table</button>
+
+      <form [formGroup]="editExam">
+        
+          <div class="form-group pb-3">
+            <label >Name </label>
+            <input type="text" class="form-control" formControlName="name" id="exampleInputPassword1" placeholder="Name ">
+          </div>
+          <div class="form-group pb-3">
+              <label >Descrption </label>
+              <input type="text" class="form-control" formControlName="description" id="exampleInputPassword1" placeholder="Description of Delivery company">
+            </div>
+          <div class="form-group pb-3">
+            <label >Phone</label>
+            <input type="text" class="form-control" formControlName="phone" id="exampleInputPassword1" placeholder="Phone">
+          </div>
+          <div class="form-group pb-3">
+            <label >Fax</label>
+            <input type="text" class="form-control" formControlName="fax" id="exampleInputPassword1" placeholder="fax">
+          </div>
+          <div class="form-group pb-3">
+            <label >Adress</label>
+            <input type="text" class="form-control" formControlName="adress" id="exampleInputPassword1" placeholder="Adress">
+          </div>
+          <div class="form-group pb-3">
+            <label >Website</label>
+            <input type="text" class="form-control" formControlName="website" id="exampleInputPassword1" placeholder="website">
+          </div>
+
+               <input type="button" class="myButton2" (click)="update()" value="Editer">
+
+      </form>
+   
+</div>
+</div>
+</div>

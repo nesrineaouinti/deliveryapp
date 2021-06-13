@@ -1,0 +1,53 @@
+
+
+     
+<div class="container pt-5">
+    <p id="text">MANAGEMNT OF DELIVERY COMPANY</p>
+    <div class="alert alert-success" *ngIf="isdeleted" role="alert">
+        <b>{{conf}}</b>
+    </div>
+      <div class="adda">
+  <a  routerLink="/Addm"  class="myButton" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add </span></a>
+  </div>
+  <table class="styled-table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">NAME</th>
+          <th scope="col">DESCRIPTION</th>
+          <th scope="col">PHONE_NUM</th>
+          <th scope="col">ADRESS</th>
+          <th scope="col">FAX</th>
+          <th scope="col">WEBSITE</th>
+          <th scope="col">UPDATE</th>
+          <th scope="col">DELETE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active-row" *ngFor="let x of tabs">
+          <th scope="row">{{ x.id }}</th>
+          <td>{{ x.name }}</td>
+          <td>{{ x.description }}</td>
+          <td>{{ x.phone }}</td>
+          <td>{{ x.adress }}</td>
+          <td>{{ x.fax }}</td>
+          <td>{{ x.website }}</td>
+         
+          <td>
+           
+              <button class="btn btn-primary"  [routerLink]="['/editm/', x.id]"><i class="material-icons">edit</i>Edit</button>
+            </td>
+            <td> 
+              <button class="btn btn-danger" (click)="delete(x.id)"><i class="material-icons">delete</i>Delete</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</div>
+
+
+
+

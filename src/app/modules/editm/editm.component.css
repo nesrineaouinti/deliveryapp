@@ -1,0 +1,65 @@
+.card{
+    box-shadow: 3px 6px 6px 3px rgba(247, 172, 172, 0.2), 0 6px 6px 0 rgba(230, 241, 247, 0.19);
+   margin-left: 400px;
+    margin-top: 20px;
+   min-width: 600px;
+    position: absolute;
+    border-radius: 30px;
+}
+h2{
+    padding: 6px 8px 6px 55px;
+    font-size: 20px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    position: left;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+    
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+
+.myButton2 {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 20px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+.alert{
+    height:60px;
+    background-color: rgb(81, 223, 124);
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px 2px #dcecfb;
+}

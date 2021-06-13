@@ -1,0 +1,51 @@
+
+     
+<div class="container">
+        <p id="text">MANAGEMENT OF MARKETPLACE</p>
+        <div class="alert " *ngIf="isdeleted" role="alert">
+            <b>{{conf}}</b>
+        </div>
+          <div class="adda">
+      <a  routerLink="/Add"  class="myButton" data-toggle="modal"><i class="material-icons">&#xE147;</i><span>Add </span></a>
+      </div>
+      <table class="styled-table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">NAME</th>
+              <th scope="col">DESCRIPTION</th>
+              <th scope="col">PHONE_NUM</th>
+              <th scope="col">ADRESS</th>
+              <th scope="col">WEBSITE</th>
+              <th scope="col">UPDATE</th>
+              <th scope="col">DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active-row" *ngFor="let x of tabs">
+              <th scope="row">{{ x.id }}</th>
+              <td>{{ x.name }}</td>
+              <td>{{ x.description }}</td>
+              <td>{{ x.phone }}</td>
+              <td>{{ x.adress }}</td>
+              <td>{{ x.website }}</td>
+             
+              <td>
+               
+                  <button class="btn btn-primary"  [routerLink]="['/Edit/', x.id]"><i class="material-icons">edit</i>Edit</button>
+                </td>
+                <td> 
+                  <button class="alart" (click)="delete(x.id)"><i class="material-icons">delete</i>Delete</button>
+  
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    
+    
+  </div>
+  
+  
+  
+
+  

@@ -1,0 +1,49 @@
+
+
+<div class="container pt-5">
+    <div class="card">
+        
+      <div class="alert " *ngIf="isAdded" role="alert">
+          <b>{{confirmation}}</b>
+      </div>
+      <h2 class="col-md-6 offset-5">Add delievrycompany</h2>
+  
+      <div class="card-body">
+          <button class="myButton" routerLink="/deliverycompany"><i class="large material-icons">chevron_left</i>Back </button>
+  
+        <form [formGroup]="ajoutExam">
+          <!-- <div class="form-group pb-3">
+              <label>Id</label>
+              <input type="number" formControlName="id" class="form-control" id="exampleInputEmail1"  placeholder="Enter id">
+            </div> -->
+            <div class="form-group pb-3">
+              <label >Name </label>
+              <input type="text" class="form-control" formControlName="name" id="exampleInputPassword1" placeholder="Name ">
+            </div>
+            <div class="form-group pb-3">
+                <label >Description</label>
+                <input type="text" class="form-control" formControlName="description" id="exampleInputPassword1" placeholder="description ">
+              </div>
+            <div class="form-group pb-3">
+              <label >phone</label>
+              <input type="text" class="form-control" formControlName="phone" id="exampleInputPassword1" placeholder="phone">
+            </div>
+            <div class="form-group pb-3">
+                <label >fax</label>
+                <input type="text" class="form-control" formControlName="fax" id="exampleInputPassword1" placeholder="Fax">
+              </div>
+            <div class="form-group pb-3">
+              <label >adress</label>
+              <input type="text" class="form-control" formControlName="adress" id="exampleInputPassword1" placeholder="adress">
+            </div>
+            <div class="form-group pb-3">
+              <label >website</label>
+              <input type="text" class="form-control" formControlName="website" id="exampleInputPassword1" placeholder="website">
+            </div>
+  
+        <input type="button" class="myButton2" (click)="add()" value="Ajouter">
+  
+        </form>
+      </div>
+    </div>
+  

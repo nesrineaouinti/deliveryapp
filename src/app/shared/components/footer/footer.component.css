@@ -1,0 +1,22 @@
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(249, 248, 250);
+    color: rgb(14, 12, 12);
+    text-align: center;
+    height: 80px;
+
+}
+p{
+    padding-top: 20px;
+    font-family:  Arial, sans-serif;
+    height: 70vmin;
+    left: 45%;
+ 
+    position: absolute;
+    top: 15%;
+      font-size: 24px;
+      
+}

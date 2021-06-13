@@ -1,0 +1,48 @@
+<p>ordrs works!</p>
+<div class="container pt-5">
+    <p id="text">Assignement of ordrs to delivery company</p>
+    <div class="alert alert-success" *ngIf="isdeleted" role="alert">
+        <b>{{conf}}</b>
+    </div>
+      <!-- <div class="adda">
+  <a  routerLink="/Addm"  class="myButton" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add </span></a>
+  </div> -->
+  <table class="styled-table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">REF_Client</th>
+          <th scope="col">CODE_ordr</th>
+          <th scope="col">DESCRIPTION</th>
+          <th scope="col">ADRESS_client</th>
+          <th scope="col">PRICE_TOTAL</th>
+          <th scope="col">ASSIGNEMENT</th>
+         <th scope="col">Affect</th>
+          <th scope="col">DELETE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active-row" *ngFor="let x of tabs">
+          <th scope="row">{{ x.id }}</th>
+          <td>{{ x.ref_cleint }}</td>
+          <td>{{  x.code_commande }}</td>
+          <td>{{ x.description }}</td>
+          <td>{{ x.adress_client }}</td>
+          <td>{{ x.price_total }}</td>
+          <td>{{ x.assginement}}</td>
+          
+         
+          <td>
+           
+              <button class="btn btn-primary"  [routerLink]="['/affecter/', x.id]"><i class="material-icons">edit</i>AFFECT</button>
+            </td>
+            <td> 
+              <button class="btn btn-danger" (click)="delete(x.id)"><i class="material-icons">delete</i>DELETE</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</div>

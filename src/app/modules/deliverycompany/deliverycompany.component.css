@@ -1,0 +1,114 @@
+
+.card{
+    width: 1300px;
+    position:absolute;
+}
+.container {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    opacity:initial;
+}
+
+.styled-table {
+    position: absolute;
+    border-radius: 20px;
+    width:100%;
+      table-layout: fixed;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    min-width: 1000px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    position: center;
+    margin-left: 20px;
+   
+}
+.styled-table thead tr {
+    background-color:  #4ddfe4;
+    color: #0f0e0e;
+    text-align: center;
+    font-size: large;
+ padding-top: 10px ;
+    border-radius: 8px;
+}
+.styled-table th,
+.styled-table td {
+    padding: 7px 7px;
+    text-align: center;
+    border-radius: 8px ;
+}
+td:hover , td:hover{
+    background-color: rgb(216, 211, 209);
+}
+.styled-table tbody tr {
+    border-bottom:  #d3edfc ;
+}
+
+tbody:hover{
+    background-color: rgb(211, 228, 235);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #071412;
+}
+.edit{
+    color: rgb(235, 49, 49);
+}
+
+
+.btn{
+    border-radius: 12px;
+}
+.alert{
+    width: 1300px;
+    margin-left: 200px;
+    height: 80px;
+    text-align: center;
+   background-color: rgb(248, 38, 38);
+}
+.btn-primary{
+    background: linear-gradient(to top right, #33ccff 0%, #507bfc 100%);
+   
+    
+}
+.btn-danger{
+    background: linear-gradient(to top right, #ff3300 0%, #ff3300 100%);
+    
+}
+#text{
+    
+    color: #222;
+    font-family:  Arial, sans-serif;
+    height: 70vmin;
+    left: 25%;
+    position: absolute;
+    top: 10%;
+      font-size: 30px;
+      position:auto;
+      padding: 10px 30px 20px 25px;
+      margin-left: 50px;
+      font-weight: bold;
+
+  }
+  .myButton {
+	background-color:#44c767;
+	border-radius:27px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:17px;
+	padding:16px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:absolute;
+	top:1px;
+}

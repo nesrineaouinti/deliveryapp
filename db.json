@@ -1,0 +1,141 @@
+{
+  "deliverycompany": [
+    {
+      "name": "Planet Express Tunisia",
+      "description": "Societe de livraison",
+      "fax": "22 22 22 22 22 ",
+      "phone": "7572852828",
+      "adress": "sfax",
+      "website": "www.",
+      "id": 2
+    },
+    {
+      "name": "tunis colie",
+      "description": "delivery company ",
+      "phone": "768686868",
+      "fax": "22 55 66 44 77 88",
+      "adress": "beja",
+      "website": "www.colis.org",
+      "id": 4
+    },
+    {
+      "name": "Colis",
+      "description": "Delievry company",
+      "phone": "54165416465",
+      "fax": "22 55 22 44 555 ",
+      "adress": "tunis",
+      "website": "www",
+      "id": 5
+    }
+  ],
+  "Marketplace": [
+    {
+      "name": "jumia",
+      "description": "mytek",
+      "phone": "aa",
+      "adress": "aaa",
+      "website": "jumia",
+      "id": 1
+    }
+  ],
+  "commandes": [
+    {
+      "id": 1,
+      "ref_client": "aa",
+      "code_commande": "aa",
+      "description": "aa",
+      "adress_client": "aa",
+      "price_total": "aa",
+      "affectation": ""
+    },
+    {
+      "id": 2,
+      "ref_client": "aa",
+      "code_commande": "aa",
+      "description": "aa",
+      "adress_client": "aa",
+      "price_total": "aa",
+      "affectation": ""
+    },
+    {
+      "id": 3,
+      "ref_client": "aa",
+      "code_commande": "aa",
+      "description": "aa",
+      "adress_client": "aa",
+      "price_total": "aa",
+      "affectation": ""
+    }
+  ],
+  "facture": [
+    {
+      "id": 1,
+      "Marketplace_name": "jumia",
+      "Adress": "Eschweiler",
+      "nombre de commandes": "20",
+      "date_facture": "22/55/88"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "aaaaaaaaa",
+      "email": "eeee",
+      "phone": "02152"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@codingthesmartway.com"
+    },
+    {
+      "name": "a",
+      "email": "a",
+      "phone": "011",
+      "id": 4
+    },
+    {
+      "name": "zzzzz",
+      "email": "ee",
+      "phone": 0,
+      "id": 5
+    }
+  ],
+  "deliveryman": [
+    {
+      "id": 1,
+      "first_name": "aaaaaaaaa",
+      "last_name": "eeee",
+      "phone": "02152",
+      "adress": "aa"
+    },
+    {
+      "id": 2,
+      "first_name": "aaaaaaaaa",
+      "last_name": "eeee",
+      "phone": "02152",
+      "adress": "aaa"
+    },
+    {
+      "id": 4,
+      "first_name": "aaaaaaaaa",
+      "last_name": "eeee",
+      "phone": "02152",
+      "adress": "aa"
+    },
+    {
+      "id": 3,
+      "first_name": "aaaaaaaaa",
+      "last_name": "eeee",
+      "phone": "02152",
+      "adress": "aa"
+    }
+  ]
+}
